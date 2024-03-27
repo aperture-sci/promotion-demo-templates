@@ -12,13 +12,13 @@ spec:
     file: version.yaml
     jsonPath: $.version
   promotion:
-    version.yaml:
+    - version.yaml:
       jsonPaths:
       - $.version
-    Chart.yaml:
+    - Chart.yaml:
       jsonPaths:
         - $.appVersion
-    values.yaml:
+    - values.yaml:
       jsonPaths:
         - $.buslog.image.tag
         - $.ctrlr.image.tag
