@@ -11,9 +11,9 @@ spec:
     file: chart.yaml
     jsonPath: $.appVersion
   promotion:
-    - Chart.yaml:
+    Chart.yaml:
       jsonPaths:
-        - $.appVersion
-    - values.yaml:
+      - $.appVersion
+    values.yaml:
       jsonPaths:
-        - $.loans.image.tag
+      - $.loans.image.tag
