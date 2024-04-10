@@ -1,7 +1,7 @@
 apiVersion: codefresh.io/v1beta1
 kind: PromotionFlow
 metadata:
-  name: orders-sequential
+  name: sequential
   annotations:
     version: 0.0.1
     description: 'sequential flow for Orders app'
