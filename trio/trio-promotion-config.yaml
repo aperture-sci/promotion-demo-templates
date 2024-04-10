@@ -17,9 +17,9 @@ spec:
       - $.version
     Chart.yaml:
       jsonPaths:
-        - $.appVersion
+      - $.appVersion
     values.yaml:
       jsonPaths:
-        - $.buslog.image.tag
-        - $.ctrlr.image.tag
-        - $.flask-ui.image.tag
+      - $.buslog.image.tag
+      - $.ctrlr.image.tag
+      - $.flask-ui.image.tag
