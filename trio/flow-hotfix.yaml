@@ -4,7 +4,7 @@ metadata:
   name: hotfix
   annotations:
     version: 0.0.3
-    description: 'hotfix'
+    description: 'hotfix from Dev to Prod'
 spec:
   triggerEnvironment: dev
   postTrigger: 'post-action'
@@ -16,4 +16,3 @@ spec:
       preAction: 'pre-action'
       postAction: 'smoketests'
       action: commit
-  

@@ -4,7 +4,7 @@ metadata:
   name: demo
   annotations:
     version: 0.0.1
-    description: 'base-flow2'
+    description: 'Flow to show parallel deployment'
 spec:
   triggerEnvironment: dev
   postTrigger: 'post-action'
