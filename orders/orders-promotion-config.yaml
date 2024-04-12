@@ -4,12 +4,12 @@ metadata:
   name: promotion-config-orders
 spec:
   applicationSourceSelector:
-    matchExpression:
-      key: codefresh.io/product
-      operator: In
-      values: ['orders', 'accounts']
-    # matchLabels:
-    #   codefresh.io/product: orders
+    # matchExpression:
+    #   key: codefresh.io/product
+    #   operator: In
+    #   values: ['orders', 'accounts']
+    matchLabels:
+      codefresh.io/product: orders
   priority: 0
   versionSource:
     file: chart.yaml
