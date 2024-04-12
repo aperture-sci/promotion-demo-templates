@@ -4,7 +4,7 @@ metadata:
   name: promotion-config-orders
 spec:
   applicationSourceSelector:
-    matchExpression:
+    matchExpressions:
       key: codefresh.io/product
       operator: In
       values: ['orders', 'accounts']
