@@ -5,7 +5,7 @@ metadata:
 spec:
   applicationSourceSelector:
     matchExpressions:
-      key: codefresh.io/product
+    - key: codefresh.io/product
       operator: In
       values: ['orders', 'accounts']
     # matchLabels:
