@@ -20,7 +20,7 @@ spec:
       dependsOn:
         - dev
       policy:
-        preAction: pre-action-failed
+        preAction: pre-action
         postAction: post-action
         action: commit
     - environment: production
