@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: WorkflowTemplate
+metadata:
+  name: post-action-failed
+spec:
+  serviceAccountName: promotion-template
+  arguments:
+    parameters:
+    - name: APP_NAME
+  entrypoint: echo-post-action
+  templates:
+  - name: echo-post-action
+    script:
+      image: alpine
+      command:
+      - sh
+      source: |
+        echos "synced app {{ workflow.parameters.APP_NAME }}"
+        
+        
