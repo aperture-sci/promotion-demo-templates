@@ -15,6 +15,6 @@ spec:
       command:
       - sh
       source: |
-        echos "synced app {{ workflow.parameters.APP_NAME }}"
+        echo "synced app {{ workflow.parameters.APP_NAME }}"
         
         
