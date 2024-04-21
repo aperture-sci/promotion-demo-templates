@@ -23,5 +23,5 @@ spec:
       command:
       - sh
       source: |
-        echos "syncing {{ workflow.parameters.APP_NAME }} "
+        echo "syncing {{ workflow.parameters.APP_NAME }} "
 
