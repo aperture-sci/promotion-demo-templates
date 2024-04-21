@@ -7,9 +7,9 @@ spec:
   arguments:
     parameters:
     - name: APP_NAME
-  entrypoint: echo-post-action
+  entrypoint: echo-pre-action
   templates:
-  - name: echo-post-action
+  - name: echo-pre-action
     script:
       image: alpine
       command:
