@@ -12,7 +12,7 @@ spec:
     #   codefresh.io/product: orders
   priority: 0
   versionSource:
-    file: chart.yaml
+    file: Chart.yaml
     jsonPath: $.appVersion
   promotion:
     Chart.yaml:
