@@ -4,9 +4,11 @@ metadata:
   name: promotion-config
 spec:
   applicationSourceSelector:
-    matchExpressions:
-    - key: app.kubernetes.io/instance
-      operator: Exists
+    matchLabels:
+      codefresh.io/product: trio-app
+    # matchExpressions:
+    # - key: app.kubernetes.io/instance
+    #   operator: Exists
   priority: 0
   versionSource:
     file: version.yaml
