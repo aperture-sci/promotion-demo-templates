@@ -1,7 +1,7 @@
 apiVersion: codefresh.io/v1beta1
 kind: PromotionFlow
 metadata:
-  name: hotfix
+  name: trio-hotfix
   annotations:
     version: 0.0.3
     description: 'hotfix from Dev to Prod'
