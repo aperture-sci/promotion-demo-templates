@@ -13,14 +13,14 @@ spec:
       dependsOn:
         - dev
       policy:
-        preAction: pre-action
+        # preAction: pre-action
         postAction: smoketests
         action: commit
     - environment: staging
       dependsOn:
         - dev
       policy:
-        preAction: pre-action-failed
+        # preAction: pre-action-failed
         postAction: post-action
         action: commit
     - environment: production
@@ -28,6 +28,6 @@ spec:
         - staging
         - qa
       policy:
-        preAction: pre-action
+        # preAction: pre-action
         postAction: post-action
         action: commit
